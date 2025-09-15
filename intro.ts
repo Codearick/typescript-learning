@@ -10,4 +10,10 @@ const user = {
     }
 }
 
+console.log("User name is: " , user.name);
 console.log(user);
+
+let isLoggedIn: boolean = false;
+
+
+export {};
