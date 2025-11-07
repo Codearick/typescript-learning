@@ -26,5 +26,12 @@ greeting.toLowerCase();
 let userId = 1234; //ts automatically detects the type it you assign a value right away.
 // userId = "Rohan"; // this will throw an error because userId is of type number
 
+let hero : string;
+
+function getHero(){
+    return "Batman";
+}
+hero = getHero();
+
 
 export {};
