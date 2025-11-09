@@ -22,4 +22,4 @@ class User {
     set courseCount(courseNumber: number){
         this._courseCount = courseNumber;
     }
-}      
+}

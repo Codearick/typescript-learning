@@ -1,5 +1,5 @@
 class User {
-    private _courseCount = 1;
+    protected _courseCount = 1;
 
     constructor(
         public name: string,
@@ -22,4 +22,20 @@ class User {
     set courseCount(courseNumber: number){
         this._courseCount = courseNumber;
     }
-}      
+}
+
+class SubUser extends User{
+    isFamily: boolean = true;
+    
+    changeCourseCount() {
+        this.courseCount = ++this.courseCount;
+        console.log("Course count changed!")
+    }
+}
+
+const niru = new User("Hello", "gmail.com", "asf");
+console.log(niru.courseCount)
+
+const rehan = new SubUser("hello", "email.com", "asdf");
+rehan.changeCourseCount();
+console.log(rehan.courseCount);
