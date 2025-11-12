@@ -8,7 +8,7 @@ console.log("Numbers Array:", numbers);
 // 2. Adding and Accessing Elements
 // You can add elements using `push` and access them using their index.
 numbers.push(6); // Adds 6 to the array
-console.log("Updated Numbers Array:", numbers);
+console.log("Updated Array: ", numbers); // Output: Updated Array: [1, 2, 3, 4, 5, 6]
 console.log("First Element:", numbers[0]); // Accessing the first element
 
 // 3. Array of Strings
